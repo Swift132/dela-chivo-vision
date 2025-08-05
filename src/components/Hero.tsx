@@ -2,33 +2,40 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-primary to-secondary overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{
-          backgroundImage: "url('/lovable-uploads/a127b764-b04a-4deb-bb07-51a08c7ef298.png')"
-        }}
-      />
-      
-      {/* Curved Green Element */}
-      <div className="absolute bottom-0 right-0 w-full h-full">
+    <section className="relative min-h-screen bg-background overflow-hidden">
+      {/* Blue Curved Background Section */}
+      <div className="absolute top-0 left-0 w-full h-3/4">
         <svg 
-          viewBox="0 0 1200 800" 
-          className="absolute bottom-0 right-0 w-full h-full"
-          preserveAspectRatio="xMaxYMax slice"
+          viewBox="0 0 1200 600" 
+          className="w-full h-full"
+          preserveAspectRatio="xMidYMid slice"
         >
           <path 
-            d="M400 800 Q800 200 1200 400 L1200 800 Z" 
-            fill="hsl(var(--accent))" 
-            opacity="0.6"
+            d="M0 0 L1200 0 L1200 400 Q800 500 400 450 Q200 420 0 480 Z" 
+            fill="hsl(var(--primary))"
+          />
+        </svg>
+      </div>
+      
+      {/* Green Organic Shape Elements */}
+      <div className="absolute top-1/4 right-16 w-64 h-64 opacity-20">
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <circle cx="100" cy="100" r="80" fill="hsl(var(--accent))" />
+        </svg>
+      </div>
+      
+      <div className="absolute bottom-1/4 right-1/3 w-48 h-48 opacity-15">
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <path 
+            d="M50 100 Q20 60 60 40 Q120 20 160 60 Q180 100 140 140 Q80 160 50 100 Z" 
+            fill="hsl(var(--accent))"
           />
         </svg>
       </div>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 flex items-center min-h-screen">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <h1 className="font-dela text-5xl md:text-7xl text-primary-foreground leading-tight mb-6 tracking-wide">
             WE MANAGE EV LOADS.
             <br />
