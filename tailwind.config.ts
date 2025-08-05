@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'dela': ['Dela Gothic One', 'Arial Black', 'sans-serif'],
+				'chivo': ['Chivo', 'Trebuchet MS', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
