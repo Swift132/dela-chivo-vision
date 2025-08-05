@@ -5,9 +5,9 @@ const Hero = () => {
     <section className="relative min-h-screen bg-gradient-to-br from-primary to-secondary overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-40"
         style={{
-          backgroundImage: "url('/lovable-uploads/47f4ea7e-c50a-4f88-b9b0-5acb385ceb43.png')"
+          backgroundImage: "url('/lovable-uploads/a127b764-b04a-4deb-bb07-51a08c7ef298.png')"
         }}
       />
       
