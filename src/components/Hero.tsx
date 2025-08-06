@@ -425,22 +425,31 @@ const Hero = () => {
             {/* Left Section - Image Container */}
             <div className="w-full lg:w-1/2 relative">
               <div className="relative">
-                <img
-                  src="/round-image.svg"
-                  alt="Round image frame"
-                  className="w-full h-auto"
-                />
-                
-                {/* Circular image inside */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-3/4 h-3/4 rounded-full overflow-hidden">
-                    <img
-                      src="/sunset-car.jpg"
-                      alt="Person with electric vehicle at sunset"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
+                <svg viewBox="0 0 912 864" className="w-full h-auto">
+                  <defs>
+                    <mask id="roundImageMask">
+                      <rect x="0" y="0" width="912" height="864" fill="black"/>
+                      <path 
+                        d="m488.8 22.2c114.5 4.9 216.9 71.1 281.7 165.7 59.3 86.6 61.6 195.6 35.3 297.2-25.2 97.4-81.5 185.2-171.6 229.7-91.2 45-194.7 33.7-290-1.8-111.2-41.4-233.6-92.5-268.5-206-36.9-120.2 17.8-248.9 99.4-344.6 78.1-91.7 193.3-145.3 313.7-140.2z" 
+                        fill="white"
+                      />
+                    </mask>
+                  </defs>
+                  
+                  {/* Background shape (green outer) */}
+                  <path 
+                    d="m715.5 103.2c106 73.1 163.9 197.3 169 326 4.6 117.8-58.3 222.8-144.1 303.7-82.1 77.6-188.2 127.4-300.5 115.9-113.6-11.7-205.2-84.3-274.7-175-81-105.9-166.9-227.7-132.2-356.4 36.7-136.4 165.7-226 300.4-268.3 129.2-40.6 270.8-22.7 382.1 54.1z" 
+                    fill="#97df72"
+                  />
+                  
+                  {/* Image inside the inner shape */}
+                  <image
+                    href="/sunset-car.jpg"
+                    x="0" y="0" width="912" height="864"
+                    mask="url(#roundImageMask)"
+                    preserveAspectRatio="xMidYMid slice"
+                  />
+                </svg>
               </div>
             </div>
 
@@ -566,9 +575,13 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
             {/* Left Column - Logo and Description */}
             <div className="md:col-span-1">
-              <div className="mb-4">
-                <h4 className="font-dela text-2xl md:text-3xl">sagewell</h4>
-              </div>
+                              <div className="mb-4">
+                  <img
+                    src="/logo-white.png"
+                    alt="Sagewell Logo"
+                    className="h-6 md:h-20 -ml-2 md:-ml-4"
+                  />
+                </div>
               <p className="font-chivo text-primary-foreground/80 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
