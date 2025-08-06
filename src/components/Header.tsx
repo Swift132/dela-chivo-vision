@@ -6,7 +6,7 @@ const Header = () => {
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center ml-2 sm:ml-4 lg:ml-6">
           <img 
-            src="/lovable-uploads/eae3e60e-5093-4dc0-a582-b4a8bc04aadc.png" 
+            src="/header-logo.png" 
             alt="Sagewell" 
             className="h-16 sm:h-20 md:h-24"
           />

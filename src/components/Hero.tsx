@@ -7,7 +7,7 @@ const Hero = () => {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/lovable-uploads/158fdc9a-3bf1-40d5-ab60-88704c847a55.png"
+            src="/hero-background.png"
             alt="Electric vehicle charging background"
             className="w-full h-full object-cover"
           />
@@ -96,7 +96,7 @@ const Hero = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
               <img
-                src="/lovable-uploads/47f4ea7e-c50a-4f88-b9b0-5acb385ceb43.png"
+                src="/solution-card-1.png"
                 alt="Person with electric vehicle"
                 className="w-full h-full object-cover"
               />
@@ -286,7 +286,7 @@ const Hero = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
               <img
-                src="/lovable-uploads/a127b764-b04a-4deb-bb07-51a08c7ef298.png"
+                src="/solution-card-3.png"
                 alt="Electric vehicle charging infrastructure"
                 className="w-full h-full object-cover"
               />
