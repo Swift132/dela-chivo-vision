@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="relative z-50 bg-white px-4 sm:px-6 lg:px-8 py-4 shadow-sm">
+    <header className="relative z-50 bg-primary px-4 sm:px-6 lg:px-8 py-6 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
@@ -13,13 +13,13 @@ const Header = () => {
         </div>
         
         <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12">
-          <a href="#" className="text-foreground hover:text-primary transition-colors font-chivo font-medium text-sm xl:text-base">
+          <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-chivo font-medium text-sm xl:text-base">
             SOLUTIONS
           </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors font-chivo font-medium text-sm xl:text-base">
+          <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-chivo font-medium text-sm xl:text-base">
             CASE STUDIES
           </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors font-chivo font-medium text-sm xl:text-base">
+          <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-chivo font-medium text-sm xl:text-base">
             ABOUT US
           </a>
         </nav>
